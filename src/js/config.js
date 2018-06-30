@@ -3,6 +3,6 @@ require.config({
 	paths:{
 		jquery:"lib/jquery/jquery-1.12.4.min",
 		load:"js/loadHeaderAndFooter",
-		alert:"js/alert"
+		template:"lib/artTemplate/template-web"
 	}
 })

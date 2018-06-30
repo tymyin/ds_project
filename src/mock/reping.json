@@ -1,0 +1,13 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+		"list":[
+			{"img":"/img/index_img/reping1.jpg","title":"品牌口碑好，茶叶确实不错，口感很好，回甘味道正，非常满意！！！发货及时","fromuser":"来自咚咚产的评价","note":"一匠一品 龙井 50g","price":"138.00"},
+			{"img":"/img/index_img/reping2.jpg","title":"老顾客了，一直买这款，已经习惯了，品质没话说，是新茶，挺好的","fromuser":"来自王玉4854992的评价","note":"顶峰 其他绿茶 50g","price":"111.00"},
+			{"img":"/img/index_img/reping3.jpg","title":"茶收到了，喝起来非常好，香气扑鼻，特别喜欢，口感很好！客服态度很好，很好的购物体验","fromuser":"来自悄虚悄的评价","note":"峨眉雪芽 四川绿茶 108g","price":"258.00"},
+			{"img":"/img/index_img/reping4.jpg","title":"新茶，日期很新，茶叶足量，早上起来泡杯，味道不错，很清香很好","fromuser":"来自dostory的评价","note":"八桂凌云 凌云白毫绿茶 120g","price":"218.00"}
+			
+		]
+	}
+}

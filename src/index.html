@@ -4,14 +4,424 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet"  href="/css/index.css" />
+	<link rel="stylesheet" href="/css/base.css" />
+	<link rel="stylesheet"  href="/css/index.css" />	
 	<title>首页</title>
 </head>
 <body>
-	<div class="header"></div>
-	<h1 style="color: red;" id="hello">hello</h1>
+	<!--头部-->
+	<div class="header"></div>	
+	<!--
+    	作者：offline
+    	时间：2018-06-25
+    	描述：主题轮播图
+    -->
+	<div class="banner">
+		<div class="banner-body">
+			<div class="menu">
+				<div class="aKey">
+					<dl>
+						<dt>一键选茶</dt>
+						<dd>
+							<a href="#">自饮助手</a>
+							<a href="#">自饮锦囊</a>
+							<a href="#">送礼助手</a>
+							<a href="#">送礼锦囊</a>
+						</dd>
+					</dl>
+				</div>
+				<!--
+                	作者：offline
+                	时间：2018-06-30
+                	描述：json循环数据
+                -->
+                <script id="menu_data" type="text/html">
+					{{each list menus}}
+						<dl>
+							<dt><a href="#">{{menus.title}}</a></dt>
+							<dd>
+								<a href="#">{{menus.mintitlea}}</a>
+								<a href="#">{{menus.mintitleb}}</a>
+								<a href="#">{{menus.mintitlec}}</a>
+								<a href="#">{{menus.mintitled}}</a>
+							</dd>
+							<!--
+			                	作者：offline
+			                	时间：2018-06-27
+			                	描述：侧边显示选项卡
+			                -->
+			                <div class="menu-detial">
+			                	<ul>
+			                		<li><a href="#"><img src="img/index_img/longjing.jpg" />安溪铁观音</a></li>
+			                		<li><a href="#"><img src="img/index_img/longjing.jpg" />安溪铁观音</a></li>
+			                		<li><a href="#"><img src="img/index_img/longjing.jpg" />安溪铁观音</a></li>
+			                		<li><a href="#"><img src="img/index_img/longjing.jpg" />安溪铁观音</a></li>
+			                		<li><a href="#"><img src="img/index_img/longjing.jpg" />安溪铁观音</a></li>
+			                	</ul>
+			                </div>
+						</dl>
+					{{/each}}
+				</script>
+				<div class="menu-list" id="menu_list"></div>
+                
+                <!--
+                	作者：offline
+                	时间：2018-06-30
+                	描述：静态数据
+                -->
+                								
+			</div>
+			<!--轮播图-->
+			<div class="slideshow" id="slideshow">
+				<ul id="slideshowImg">
+					<li><img src="/img/index_img/lunbo1.jpg"/></li>
+					<li><img src="/img/index_img/lunbo2.jpg"/></li>
+					<li><img src="/img/index_img/lunbo3.jpg"/></li>
+					<li><img src="/img/index_img/lunbo4.jpg"/></li>
+				</ul>				
+			</div>
+		</div>		
+	</div>
+	<!--
+    	作者：offline
+    	时间：2018-06-25
+    	描述：主要内容
+    -->
+    <main>
+    	<div class="main-top">
+    		<!--
+            	作者：offline
+            	时间：2018-06-25
+            	描述：模块
+            -->
+            <div class="module">
+            	<div><img src="/img/index_img/drink.jpg"/></div>
+            	<div><img src="/img/index_img/gift.jpg"/></div>
+            	<div><img src="/img/index_img/ppg.jpg"/></div>
+            	<div><img src="/img/index_img/m2o.jpg"/></div>
+            </div>
+            <!--
+            	作者：offline
+            	时间：2018-06-25
+            	描述：特价计时器
+            -->
+            <div class="teJia">
+            	<div class="teJiaMenu">
+            		<div class="teJiaTitle">
+            			<i>醉品<em>特价</em></i>
+            			<span>总有你想不到的低价</span>
+            		</div>
+            		<div class="timer">
+            			<span>距结束：<em>5</em>天</span>
+            			<span>08</span>:<span>18</span>:<span>39</span>
+            		</div>
+            	</div>
+            	<div class="teJiaList">
+            		<ul id="tejia_list"></ul>
+            		<script type="text/html" id="tejia_date">
+            			{{each list prod}}
+            				<li><a href="html/detail.html" target="_blank">
+	            					<div><img src="{{prod.img}}"/></div>
+	            					<p>{{prod.title}}</p>
+	            					<p>{{prod.note}}</p>
+	            					<p><span>￥{{prod.newprice}}</span><del>￥{{prod.price}}</del></p>
+	            					<div><img src="{{prod.tag}}"/></div>
+	            				</a>
+	            			</li>
+            			{{/each}}
+            		</script>	            		            			
+            	</div>
+            </div>
+    	</div>
+    	<!--
+            	作者：offline
+            	时间：2018-06-26
+            	描述：自饮、送礼、茶器等
+            -->
+    	<div class="lanmu">    		
+            <div class="lanmu-body">
+            	<!--
+                	作者：offline
+                	时间：2018-06-26
+                	描述：自饮
+                -->
+                <div class="lanmu-content">
+                	<h2>自饮</h2>
+                	<div class="lanmu-list">
+                		<div class="lanmuList-left">
+                			<div><a href="html/detail.html"><img src="/img/index_img/ziyin.jpg" /></a></div>
+                			<div class="more">
+                				<a href="html/list.html" target="_blank">
+                					<p>自饮助手</p>
+	                				<p>自已喝的茶<br />包装不用太复杂</p>
+	                				<div class="moreBtn"></div>
+                				</a>                				
+                			</div>
+                		</div>
+                		<div class="lanmuList-center">
+                			<ul id="ziyinList">
+                				
+                			</ul>
+                			<script type="text/html" id="ziyin_data">
+                				{{each list chuncha}}
+                					<li><a href="html/detail.html" target="_blank">
+	                						<div><img src="{{chuncha.img}}" /></div>                						
+	                						<p>{{chuncha.title}} </p>
+	                						<p>{{chuncha.note}}</p>
+	                						<p>￥{{chuncha.price}}</p>
+	                						<div><img src="{{chuncha.tag}}"/></div>
+                						</a>
+                					</li>
+                				{{/each}}
+                			</script>
+                		</div>
+                		<div class="lanmuList-right">
+                			<div class="lanmuListRight-top">
+                				<h3>自饮锦囊</h3>
+	                			<ul>
+	                				<li><a>
+	                					<h4>沿袭魏家300年制茶技艺之作，醉品集团联合非遗大师魏月德推出极品陈年铁观音</h4>
+	                					<div><img src="/img/index_img/chuncha5.jpg" />
+	                						<p>夏天经常喝白茶的人，很少中暑。专家认为，这是因为白茶中含有多种氨基酸，具有退热、祛暑、解毒的功效。白茶比红茶、绿茶在制作方法上更为简单，它在采摘下来后，不经过任何炒青或揉捻动作，便直接晒干或烘干制作而</p>
+	                					</div>
+	                					</a>
+	                				</li>
+	                				<li><a>
+	                					<h4>入夏，喝白茶好处竟然这么多？</h4>
+	                					<div><img src="/img/index_img/chuncha6.jpg" />
+	                						<p>天气渐热，身体乏困，外卖饮料热量高，甜腻易胖，凉白开又无滋无味</p>
+	                					</div>
+	                					</a>
+	                				</li>
+	                				<li><a>
+	                					<h4>沿袭魏家300年制茶技艺之作，醉品集团联合非遗大师魏月德推出极品陈年铁观音</h4>
+	                					<div><img src="/img/index_img/chuncha7.jpg" />
+	                						<p>天气渐热，身体乏困，外卖饮料热量高，甜腻易胖，凉白开又无滋无味</p>
+	                					</div>
+	                					</a>
+	                				</li>
+	                				<li><a>
+	                					<h4>入夏，喝白茶好处竟然这么多？</h4>
+	                					<div><img src="/img/index_img/chuncha8.gif" />
+	                						<p>夏天经常喝白茶的人，很少中暑。专家认为，这是因为白茶中含有多种氨基酸，具有退热、祛暑、解毒的功效。白茶比红茶、绿茶在制作方法上更为简单，它在采摘下来后，不经过任何炒青或揉捻动作，便直接晒干或烘干制作而</p>
+	                					</div>
+	                					</a>
+	                				</li>
+	                			</ul>
+                			</div>
+                			
+                			<div class="more">
+                				<a href="html/list.html" target="_blank">
+	            					<p>自饮助手</p>
+		            				<p>自已喝的茶<br />包装不用太复杂</p>
+		            				<div class="moreBtn"></div>
+	            				</a>
+                			</div>
+                		</div>
+                	</div>
+                </div>
+                <!--
+                	作者：offline
+                	时间：2018-06-26
+                	描述：送礼
+                -->
+                <div class="lanmu-content">
+                	<h2>送礼</h2>
+                	<div class="lanmu-list">
+                		<div class="lanmuList-left">
+                			<div><img src="/img/index_img/ziyin.jpg" /></div>
+                			<div class="more">
+                				<a href="html/list.html" target="_blank">
+                					<p>自饮助手</p>
+	                				<p>自已喝的茶<br />包装不用太复杂</p>
+	                				<div class="moreBtn"></div>
+                				</a>                				
+                			</div>
+                		</div>
+                		<div class="lanmuList-center">
+                			<ul id="songliList">
+                				
+                			</ul>
+                			<script type="text/html" id="songli_data">
+                				{{each list songli}}
+                					<li><a href="html/detail.html" target="_blank">
+	                						<div><img src="{{songli.img}}" /></div>                						
+	                						<p>{{songli.title}} </p>
+	                						<p>{{songli.note}}</p>
+	                						<p>￥{{songli.price}}</p>
+	                						<div><img src="{{songli.tag}}"/></div>
+                						</a>
+                					</li>
+                				{{/each}}
+                			</script>
+                		</div>
+                		<div class="lanmuList-right">
+                			<div class="lanmuListRight-top">
+                				<h3>自饮锦囊</h3>
+	                			<ul>
+	                				<li><a>
+	                					<h4>入夏，喝白茶好处竟然这么多？</h4>
+	                					<div><img src="/img/index_img/chuncha5.jpg" />
+	                						<p>夏天经常喝白茶的人，很少中暑。专家认为，这是因为白茶中含有多种氨基酸，具有退热、祛暑、解毒的功效。白茶比红茶、绿茶在制作方法上更为简单，它在采摘下来后，不经过任何炒青或揉捻动作，便直接晒干或烘干制作而</p>
+	                					</div>
+	                					</a>
+	                				</li>
+	                				<li><a>
+	                					<h4>沿袭魏家300年制茶技艺之作，醉品集团联合非遗大师魏月德推出极品陈年铁观音</h4>
+	                					<div><img src="/img/index_img/chuncha6.jpg" />
+	                						<p>夏天经常喝白茶的人，很少中暑。专家认为，这是因为白茶中含有多种氨基酸，具有退热、祛暑、解毒的功效。白茶比红茶、绿茶在制作方法上更为简单，它在采摘下来后，不经过任何炒青或揉捻动作，便直接晒干或烘干制作而</p>
+	                					</div>
+	                					</a>
+	                				</li>
+	                				<li><a>
+	                					<h4>入夏，喝白茶好处竟然这么多？</h4>
+	                					<div><img src="/img/index_img/chuncha7.jpg" />
+	                						<p>天气渐热，身体乏困，外卖饮料热量高，甜腻易胖，凉白开又无滋无味</p>
+	                					</div>
+	                					</a>
+	                				</li>
+	                				<li><a>
+	                					<h4>沿袭魏家300年制茶技艺之作，醉品集团联合非遗大师魏月德推出极品陈年铁观音</h4>
+	                					<div><img src="/img/index_img/chuncha8.gif" />
+	                						<p>天气渐热，身体乏困，外卖饮料热量高，甜腻易胖，凉白开又无滋无味</p>
+	                					</div>
+	                					</a>
+	                				</li>
+	                			</ul>
+                			</div>
+                			
+                			<div class="more">
+                				<a href="html/list.html" target="_blank">
+	            					<p>自饮助手</p>
+		            				<p>自已喝的茶<br />包装不用太复杂</p>
+		            				<div class="moreBtn"></div>
+            					</a>
+                			</div>
+                		</div>
+                	</div>
+                </div>
+                <!--
+                	作者：offline
+                	时间：2018-06-26
+                	描述：茶器
+                --> 
+                <div class="lanmu-content">
+                	<h2>茶器</h2>
+                	<div class="lanmu-list chaqi">
+            			<ul>
+	                		<li><a href="#"><img src="/img/index_img/chaju.jpg"/></a></li>
+	                		<li><a href="#"><img src="/img/index_img/chaju1.jpg"/></a></li>
+	                	</ul>  
+	                	<ul class="chaqi-list" id="chajuList"></ul>
+            			<script type="text/html" id="chaju_data">
+            				{{each list chaju}}
+            					<li><a href="html/detail.html" target="_blank">
+                						<div><img src="{{chaju.img}}" /></div>                						
+                						<p>{{chaju.title}} </p>
+                						<p>{{chaju.note}}</p>
+                						<p>￥{{chaju.price}}</p>                						
+            						</a>
+            					</li>
+            				{{/each}}
+            			</script> 
+            			<!--更多-->
+            			<div class="chaqimore">
+            				<a href="html/list.html" target="_blank">
+            					<p>自饮助手</p>
+	            				<p>自已喝的茶<br />包装不用太复杂</p>
+	            				<div class="moreBtn"></div>
+            				</a>            				
+            			</div>
+                	</div>
+                </div>
+                <!--
+                	作者：offline
+                	时间：2018-06-26
+                	描述：热销
+                -->
+                <div class="lanmu-content">
+                	<h2 class="repingTitle">热评产品<span>评价，你的好茶</span></h2>
+                	<div class="lanmu-list reping"> 
+                		<ul id="repingList">
+                				
+                		</ul>
+            			<script type="text/html" id="reping_data">
+            				{{each list reping}}
+	            				<li><a href="html/detail.html" target="_blank">
+		                				<div><img src="{{reping.img}}"/></div>
+		                				<p>{{reping.title}}</p>
+		                				<p>{{reping.fromuser}}</p>
+		                				<p>{{reping.note}}    |<span>￥{{reping.price}}</span></p>
+		                			</a>
+		                		</li>            					
+            				{{/each}}
+            			</script>             			
+                	</div>
+                </div>
+                <!--
+                	作者：offline
+                	时间：2018-06-26
+                	描述：头条
+                -->
+                <div class="lanmu-content">
+                	<h2 class="repingTitle toutiaomore">醉品头条<span>带你了解醉品</span><a href="#">浏览更多</a></h2>
+                	<div class="lanmu-list toutiao">  
+                		<ul id="toutiaoList">
+                				
+                		</ul>
+            			<script type="text/html" id="toutiao_data">
+            				{{each list toutiao}}
+            					<li><a href="#" target="_blank">
+		                				<div><img src="{{toutiao.img}}"/></div>
+		                				<p>{{toutiao.title}}</p>
+		                				<p>{{toutiao.note}}</p>	                				
+		                			</a>
+		                		</li>	            				           					
+            				{{/each}}
+            			</script>             			                		
+                	</div>
+                </div>
+            </div>
+    	</div>    	
+    </main>
+    <!--
+    	作者：offline
+    	时间：2018-06-26
+    	描述：悬top
+    -->
+    <div class="floatTop" id="floatTop">
+    	<div class="floatBody">
+    		<div class="floatLogo">
+    			<h1><a href="index.html"><span>醉品商城</span></a></h1>
+    		</div>
+    		<ul>
+    			<li><a href="#">首页</a></li>
+    			<li><a href="#">品牌集成馆</a></li>
+    			<li><a href="#">大师名匠馆</a></li>
+    			<li><a href="#">线下OMO体验馆</a></li>
+    			<li><a href="#">积分商城</a></li>
+    		</ul>
+    		<div class="float-cat">购物车</div>
+    	</div>
+    </div>
+    
+	<!--尾部-->
 	<div class="footer"></div>
+	<script src="lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>	
 	<script src="lib/requirejs/require.js" type="text/javascript" charset="utf-8" data-main="js/index"></script>
+	<script src="lib/tools/unslider.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//轮播图
 	
+		$(document).ready(function(e) {
+
+		    $('#slideshow').unslider({
+		
+				dots: true
+		
+			});		
+		});
+
+	</script>
 </body>
 </html>

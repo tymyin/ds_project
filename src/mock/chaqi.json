@@ -1,0 +1,16 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+		"list":[
+			{"img":"/img/index_img/chaju2.jpg","title":"狮牌 西湖龙井 2018年明前茶 绿茶 一级 100g 湖光礼盒 配手提袋","note":"原产地老味道","price":"138"},
+			{"img":"/img/index_img/chaju3.jpg","title":"八桂凌云 凌云白毫绿茶 雾中缘神韵绿茶 120g 绿色礼盒","note":"喝有机茶，健康品质生活","price":"258"},
+			{"img":"/img/index_img/chaju4.jpg","title":"【首届安溪铁观音大师王清海之作】醉品朴茶 匠心质造系列 安溪铁观音 2018春茶 清香型 正味 特级 GY1800-240g","note":"过年过节 访亲茶礼","price":"138"},
+			{"img":"/img/index_img/chaju5.jpg","title":"狮牌 西湖龙井 2018年明前茶 绿茶 一级 100g 银铁盒 配手提袋","note":"正宗核心产区 手工炒制","price":"238"},
+			{"img":"/img/index_img/chaju6.jpg","title":"峨眉雪芽 四川绿茶 禅心 2018明前茶 绿茶  礼盒96g","note":"100颗手工挑选1颗畅销9年 送领导","price":"888"},
+			{"img":"/img/index_img/chaju7.jpg","title":"醉品叶界 吴月萍大师代表作 福鼎白茶 2012年 寿眉饼 357g","note":"市场潮流品类 100盒专属定制","price":"638"},
+			{"img":"/img/index_img/chaju3.jpg","title":"醉品叶界 吴月萍大师代表作 福鼎白茶 2012年 寿眉饼 357g","note":"市场潮流品类 100盒专属定制","price":"638"},
+			{"img":"/img/index_img/chaju4.jpg","title":"醉品叶界 吴月萍大师代表作 福鼎白茶 2012年 寿眉饼 357g","note":"出行便携，单人套组","price":"638"}				
+		]
+	}
+}

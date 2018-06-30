@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="/css/base.css" />
+	<link rel="stylesheet" href="../css/login.css" />
+	<title>登录</title>
+</head>
+<body>
+	<header>
+		<div class="headerTop">
+			<div><h1><a href="../index.html" target="_blank"><span>醉品商城</span></a></h1></div>			
+		</div>		
+	</header>
+	<main>
+		<div class="mian-body">
+			<div><a href="../index.html" target="_blank"><img src="/img/index_img/f9e9cb.jpg"/></a></div>
+			<div class="login">
+				<ul>
+					<li id="zhlogin">账号登录</li>
+					<li id="dxlogin">短信登录</li>
+				</ul>
+				<form action="#" method="get">
+					<div id="zhanghao">
+						<div><input type="text" placeholder="手机号" id="loginUser" /></div>
+						<div><input type="password" placeholder="密码" id="loginPass"/></div>
+						<div id="regTiShi"><i class="iconfont"></i><em></em></div>
+						<div><input type="button" value="立即登录" id="loginBtn"/></div>
+						<div class="forget"><a href="register.html">注册醉品账号|</a><a href="#">忘记密码？</a></div>
+						
+					</div>
+					<div id="duanxin">
+						<div><input type="text" placeholder="手机号" id="dxPhone" /></div>
+						<div><input type="text" placeholder="验证码" id="dxYan"/><span>sdfds</span></div>
+						<div><input type="text" placeholder="短信验证码" id="dxYanzheng"/><span>发送验证码</span></div>
+						<div><input type="button" value="立即登录" id="duanxinBtn"/></div>
+					</div>
+					<fieldset>
+						<legend>其他方式登录</legend>
+						<span id="zhifubao"><img src="../img/index_img/zhifubao.png"/></span>
+						<span id="qqLoginBtn"><img src="../img/index_img/qq.png"/></span>
+						<span class="weixin-login"><img src="../img/index_img/weixin.png"/></span>
+					</fieldse>
+				</form>				
+				
+			</div>
+		</div>
+	</main>
+	<div class="footer"></div>
+	<script src="../lib/requirejs/require.js" type="text/javascript" charset="utf-8" data-main="/js/login"></script>
+	<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="100263805" charset="utf-8"></script>		
+</body>
+</html>

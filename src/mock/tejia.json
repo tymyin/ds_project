@@ -1,0 +1,13 @@
+{
+	"res_code":0,     
+	"res_error":"",    
+	"res_body":{   
+		"list":[     
+			{"img":"/img/index_img/tejia1.jpg","title":"赏友 菊花茶 2018年 金丝皇菊 60g 两盒装","note":"办公伴手礼，送同事","newprice":"178.20","price":"198.00","tag":"/img/index_img/time-limit.png"},
+			{"img":"/img/index_img/tejia2.jpg","title":"【有机茶】天池乌岽山 凤凰单丛 2017春茶 乌龙茶 经典 特级 125g","note":"办公伴手礼，送同事","newprice":"178.20","price":"198.00","tag":"/img/index_img/time-limit.png"},
+			{"img":"/img/index_img/tejia3.jpg","title":"艾购 锡兰红茶 2016年 橙黄白毫1 Supreme 100g 蓝方罐+橙黄白毫1 Premium 125g 红方罐","note":"办公伴手礼，送同事","newprice":"278.20","price":"398.00","tag":"/img/index_img/time-limit.png"},
+			{"img":"/img/index_img/tejia4.jpg","title":"狮牌 西湖龙井 2018年明前茶 绿茶 特级 100g 金铁盒 配手提袋","note":"办公伴手礼，送同事","newprice":"178.20","price":"298.00","tag":"/img/index_img/time-limit.png"},
+			{"img":"/img/index_img/tejia5.jpg","title":"【预售：付款成功后7日内发货】魏荫 安溪铁观音 2008年老茶 老魏道 特级 传统工艺 碳焙 250g*8罐（买8罐送8罐）","note":"办公伴手礼，送同事","newprice":"4,000.00","price":"8,000.00","tag":"/img/index_img/time-limit.png"}
+		]
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+		"list":[
+			{"img":"/img/index_img/chuncha1.jpg","title":"一匠一品 代表作 西湖龙井","note":"核心原产区西湖，香味鲜浓","price":"938","tag":"/img/index_img/chuncha.png"},
+			{"img":"/img/index_img/chuncha2.jpg","title":"醉品朴茶 全新包装升级之自饮系列 金骏眉 特级100g","note":"头采茶，蜜香浓郁，口感甘甜","price":"138","tag":"/img/index_img/chuncha.png"},
+			{"img":"/img/index_img/chuncha3.jpg","title":"醉品朴茶 全新升级之自饮系列 西湖龙井 一级100g","note":"传统炒青工艺，经典浓香","price":"138","tag":"/img/index_img/chuncha.png"},
+			{"img":"/img/index_img/chuncha4.jpg","title":"顶峰 2018年明前茶 绿茶 精品 50g 开化龙顶 单罐","note":"核心原产区西湖，香味鲜浓","price":"238","tag":"/img/index_img/chuncha.png"},
+			{"img":"/img/index_img/chuncha2.jpg","title":"一匠一品 代表作 西湖龙井 炒茶王仇晓华手制 绿茶 特级 50g","note":"核心原产区西湖，香味鲜浓","price":"638","tag":"/img/index_img/chuncha.png"},
+			{"img":"/img/index_img/chuncha8.jpg","title":"醉品朴茶 安溪铁观音 NGY0840-250g  清香型 一级 环保装","note":"茶农直供 买就省70%","price":"538","tag":"/img/index_img/chuncha.png"}
+		]
+	}
+}

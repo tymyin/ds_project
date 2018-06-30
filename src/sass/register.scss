@@ -1,0 +1,134 @@
+header{
+    height: 100px;
+    background: #fff;
+    .headerTop{
+        width: 1226px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;        
+        div{           
+            line-height: 100px;
+        }
+        div:nth-of-type(1){
+            h1{
+                float: left;
+                height: 100px;
+                a{
+                    display: inline-block;
+                    height: 100px;
+                    width: 190px;                    
+                    background: url(../img/index_img/logo.png) no-repeat 0px center;
+                    span{
+                        display: none;
+                    }
+                }                
+            }
+            span{
+                    float: left;
+                    font-size: 17px;
+                    padding-left: 20px;
+                }
+        }
+        div:nth-of-type(2){
+            font-size: 16px;
+            color: #999;
+            a{
+                color: #333;
+            }
+        }
+        
+    }
+}
+main{
+    background: #f5f5f5;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    .regMainBody{
+        width: 1226px;
+        margin: 0 auto;
+        background: #fff;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        .regForm{
+            width: 392px;
+            .regTitle{
+                height: 52px;
+                background: url(/img/index_img/zhucefuli.png) no-repeat 0px center;
+                padding-left: 62px;
+                font-size: 17px;
+                color: #333;
+                line-height: 52px;
+                margin-bottom: 30px;
+                span{
+                    color: #FF3600;                   
+                }
+            }
+            form{
+                >div{
+                    margin-bottom: 20px;
+                    input{
+                        height: 48px;
+                        border: 1px solid #cbcbcb;
+                        padding-left: 14px;
+                        font-size: 12px;
+                        color: #757575;
+                        box-sizing: border-box;                       
+                    }
+                    input[type="text"],input[type="password"],input[type="submit"]{
+                        width: 392px;                        
+                    }
+                    .yanzhengma{
+                        width: 230px !important;
+                    }
+                    span{
+                        display: inline-block;
+                        width: 150px;
+                        height: 48px;
+                        text-align: center;
+                        line-height: 48px;
+                        margin-left: 10px;
+                        background: #f0f0f0;
+                        font-size: 16px;
+                        color: #adadb3;
+                        box-sizing: border-box;
+                    }
+                    
+                    >.err{
+                        font-size: 12px;
+                        line-height: 24px;
+                        color: red;                        
+                        display: none;
+                        em{
+                            padding-left: 5px;
+                        }
+                    }
+                    >.succeed{
+                        font-size: 12px;
+                        line-height: 24px;
+                        color: green;                        
+                        display: none;
+                        em{
+                            padding-left: 5px;
+                        }
+                    }
+                    
+                }
+                div:last-child{
+                    color: #adadad;
+                    font-size: 11px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+footer{
+    height: 58px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    background: #f5f5f5;
+    line-height: 58px;
+}

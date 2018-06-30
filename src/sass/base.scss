@@ -1,0 +1,400 @@
+html,body,header,nav,main,section,footer,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dt,dd,form,fieldset,legend,input,textarea,select,div,img,table,span,a,em,i,b,option,strong,tr,td,pre,nobr,label,mark,video,audio,article,aside {margin: 0;padding: 0}
+body {font: 16px "宋体", "Arial Narrow", HELVETICA;background: #fff;}
+html,body {width: 100%;height: 100%}
+a {text-decoration: none}
+em {font-style: normal}
+ul,ol,li {list-style: none}
+img {border: none;vertical-align: middle}
+table {border-collapse: collapse;border-spacing: 0}
+.ind {text-indent: 2em}
+.noborder {border: 0;}
+
+//头部
+.header{
+    header {
+        nav {
+            height: 40px;
+            background: #333333;
+            .top {
+                margin: 0 auto;
+                width: 1227px;
+                //height: 100%;
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    li {
+                        color: #b0b0b0;
+                        line-height: 40px;
+                        a {
+                            color: #b0b0b0;
+                        }
+                        a:hover{
+                            color: red;
+                        }
+                    }
+                    
+                }
+                ul:first-of-type {
+                    float: left;
+                    li:last-child{  
+                        position: relative; 
+                        background: url(/img/index_img/css-xuebi2.png)no-repeat 0px 14px;                     
+                        padding-left: 12px;
+                        .top-phone{
+                         display: none;
+                         text-align: center;
+                         font-size: 12px;
+                         color: #333333;
+                         line-height: 20px;
+                         position: absolute;
+                         top: 40px;
+                         left: 0px;
+                         z-index: 9999;
+                         background: #fff;
+                        }
+                    }
+                    li:nth-of-type(2) {
+                        padding-left: 33px;
+                        padding-right: 33px;
+                    }
+                    li:last-child:hover{
+                        .top-phone{
+                           display: block; 
+                        }
+                    }
+                }
+                ul:last-of-type {
+                    float: right;
+                    li{
+                        padding-left: 12px;
+                        padding-right: 13px;
+                    }
+                    li:nth-of-type(1){
+                        padding-right: 41px;
+                    }
+                    li:nth-of-type(2){
+                        padding-right: 28px;
+                    }
+                    li:last-of-type{
+                        width: 120px;                                                                     
+                        font-size: 15px;
+                        a{
+                            padding-left: 40px; 
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                            background: #ff3600 url(../img/index_img/css-xuebi2.png) no-repeat 14px -25px;
+                            color: #fff;
+                            box-sizing: border-box;
+                        }
+                    }
+                    li:last-of-type a:hover{
+                        color: #FF3600;
+                        background: #e0e0e0 url(../img/index_img/css-xuebi2.png) no-repeat 14px -67px;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+        .topBanner{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            overflow: hidden;
+            a>img{
+                width: 100%;
+                height: 100px;
+                margin: 0 -100%;
+            }
+        }
+        .logo{
+            width: 1226px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            .logoTop{
+                display: flex;
+                justify-content: space-between;
+                h1 a{
+                    display: block;
+                    width: 190px;
+                    height: 90px;
+                    background: url(/img/index_img/logo1.gif);
+                    span{
+                        display: none;
+                    }
+                }
+                .search>div{
+                    padding-top: 24px;
+                    form{
+                        width: 490px;
+                        height: 38px;
+                        border: 1px solid #e0e0e0;
+                        input{
+                            border: none;
+                            float: left;
+                        }
+                        input[type="text"]{
+                            width: 433px;
+                            height: 100%;
+                            padding-left: 5px;
+                            font-size: 12px;
+                            box-sizing: border-box;  
+                            outline: none;        
+                        }                        
+                        input[type="button"]{
+                          width: 57px;
+                          height: 100%;                   
+                          border-left: 1px solid #e0e0e0;
+                          background: none;
+                          background: url(/img/index_img/css-xuebi2.png) no-repeat 18px -104px;                  
+                        }
+                    } 
+                }
+                .search>p{
+                    margin-top: 15px;
+                    a{
+                        margin-right: 20px;
+                        font-size: 11px;            
+                        color: #999999;            
+                    }
+                    a:first-of-type{
+                        color: #ff3600;
+                    }
+                }
+                .three-list{
+                    
+                    ul{
+                       padding-top: 25px;               
+                        li{
+                            width: 84px;
+                            height: 31px;
+                            margin-right: 20px;
+                            float: left;
+                            color: #b2b2b2;
+                            font-size: 11px;
+                            padding-left: 35px;
+                            box-sizing: border-box;           
+                        }
+                        li:nth-of-type(1){
+                            background: url(/img/index_img/css-xuebi2.png) no-repeat 0px -205px;
+                        }
+                        li:nth-of-type(2){
+                            background: url(/img/index_img/css-xuebi2.png) no-repeat 0px -261px;
+                        }
+                        li:nth-of-type(3){
+                            background: url(/img/index_img/css-xuebi2.png) no-repeat 0px -317px;
+                        }
+                        li:nth-of-type(4){
+                            background: url(/img/index_img/phone_qr.jpg) no-repeat 8px 0px;
+                            background-size: 54px 54px;
+                            width: 84px;
+                            height: 54px;
+                            position: relative;
+                            top: -6px;
+                            right: 0px;
+                            padding-left: 0px;
+                            line-height: 120px;
+                        }
+                    }
+                }
+                
+            }
+            .logoBottom{
+                padding-top: 30px;
+                padding-bottom: 20px;
+                ul{
+                    li{
+                        margin-right: 50px;
+                        float: left;
+                        font-size: 12px;
+                        a{
+                            color: #333333;
+                        }
+                    }
+                    li:nth-of-type(1){
+                        margin-right: 123px;
+                        font-size: 16px;
+                        background: url(/img/index_img/icon-list.png)no-repeat 0px center;
+                        padding-left: 28px;
+                    }
+                    li a:hover{
+                        color: #ff3600;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+//底部
+footer{
+    .footer-body{
+        width: 1226px;
+        margin: 0 auto;
+        .footerTop{
+            padding-top: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            overflow: hidden;
+            ul{
+                li{
+                    padding: 0px 50px 0px 90px;
+                    font-size: 12px;
+                    color: #333333;
+                    height: 33px;
+                    line-height: 33px;
+                    border-right: 1px solid #e0e0e0;
+                    float: left;
+                    background: url(/img/index_img/css-xuebi.png) no-repeat;
+                }
+                li:nth-of-type(1){
+                    background-position:0px -135px;
+                     padding: 0px 50px 0px 40px;
+                }
+                li:nth-of-type(2){
+                    background-position:40px -188px;
+                }
+                li:nth-of-type(3){
+                    background-position:40px -240px;
+                }
+                li:nth-of-type(4){
+                    background-position:40px -289px;
+                }
+                li:nth-of-type(5){
+                    background-position:40px -34px;
+                }
+                li:nth-of-type(6){
+                    background-position:40px -84px;
+                    border-right: none;
+                     padding: 0px 0px 0px 90px;
+                }
+            }
+        }
+        .footerCenter{
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            .centerLeft{
+                ul{
+                    float: left;
+                    margin-right: 75px;
+                    li{
+                        line-height: 33px;
+                        font-size: 12px;
+                        a{
+                            color: #757575;
+                        }
+                    }
+                    li:first-child{
+                        font-size: 12px;
+                        color: #424242;
+                        height: 37px;
+                    }
+                }
+            }
+            .centerRight{                
+                li{
+                    border-left: 1px solid #B0B0B0;  
+                    height: 145px;     
+                    float: left;                                      
+                }
+                li:first-child{
+                    padding-left: 40px;
+                    padding-right: 38px;
+                    p:nth-of-type(1){
+                        font-size: 17px;
+                        color: #FF3600;
+                    }
+                    p:nth-of-type(2){
+                        font-size: 11px;
+                        line-height: 37px;
+                        color: #616161;
+                    }
+                    p:nth-of-type(3){
+                        height: 30px;
+                        border: 1px solid #FF3600;
+                        font-size: 11px;
+                        line-height: 30px;
+                        color: #FF3600;
+                        padding-left: 46px;
+                        margin-top: 58px;
+                        background: url(/img/index_img/css-xuebi.png)no-repeat 25px 8px ;
+                    }
+                }
+                li:last-child{
+                    padding: 0px 34px;
+                    color: #757575;
+                    font-size: 14px;
+                    text-align: center;
+                }                
+            }
+        }
+        
+    }
+    .footerBottom{
+            background: #333333;
+            height: 123px;            
+            .footerBottom-body{
+                width: 1226px;
+                margin: 0 auto;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .bottomLeft{
+                    padding-left: 70px;
+                    background: url(../img/index_img/zui.png) no-repeat;
+                    height: 60px;
+                    p{
+                       color: #b0b0b0; 
+                       font-size: 11px;
+                       line-height: 24px;
+                    }
+                    ul{
+                        li{
+                            border-right: 1px solid #b0b0b0;                            
+                            padding: 0px 15px;
+                            float: left;
+                            font-size: 11px;
+                            line-height: 16px;
+                            a{
+                                color: #b0b0b0;
+                            }
+                        }
+                        li:first-child{
+                            padding-left: 0px;
+                        }
+                    }
+                }
+                .bottomRight{
+                    ul{
+                        li{
+                            padding-right: 15px;
+                            padding-left: 28px;                            
+                            font-size: 11px;
+                            line-height: 17px;
+                            float: left;
+                            color: #b0b0b0; 
+                        }
+                        li:nth-of-type(1){
+                            background: url(../img/index_img/zp_ic_hxcy.png) no-repeat 0px 0px;
+                        }
+                        li:nth-of-type(2){
+                            background: url(../img/index_img/zp_ic_aq.png) no-repeat 0px 0px;
+                        }
+                        li:nth-of-type(3){
+                            background: url(../img/index_img/zp_ic_kx.png) no-repeat 0px 0px;
+                        }
+                        li:nth-of-type(4){
+                            background: url(../img/index_img/zp_ic_aqlm.png) no-repeat 0px 0px;
+                        }
+                        li:nth-of-type(5){
+                            background: url(../img/index_img/zp_ic_yyzz.png) no-repeat 0px 0px;
+                        }
+                    }
+                }
+            }
+        }
+}

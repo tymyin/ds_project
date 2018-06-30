@@ -1,0 +1,15 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+		"list":[
+			{"title":"乌龙茶","mintitlea":"安溪铁观音","mintitleb":"武夷岩茶","mintitlec":"台湾高山茶","mintitled":"广东单枞"},
+			{"title":"红茶","mintitlea":"金骏眉","mintitleb":"正山小种","mintitlec":"祁门红茶","mintitled":"云南滇红"},
+			{"title":"绿茶","mintitlea":"龙井","mintitleb":"碧螺春","mintitlec":"黄山毛峰","mintitled":"六安瓜片"},
+			{"title":"黑茶","mintitlea":"普洱茶","mintitleb":"安华黑茶","mintitlec":"柑普茶","mintitled":""},
+			{"title":"白茶","mintitlea":"福鼎白茶","mintitleb":"其他白茶","mintitlec":"","mintitled":""},
+			{"title":"花茶","mintitlea":"茉莉花茶","mintitleb":"玫瑰花茶","mintitlec":"菊花茶","mintitled":"其他花茶"},
+			{"title":"茶器","mintitlea":"陶瓷茶具","mintitleb":"紫砂茶具","mintitlec":"玻璃茶具","mintitled":"茶盘"}
+		]
+	}
+}

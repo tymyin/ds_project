@@ -1,0 +1,139 @@
+header{
+    height: 100px;
+    background: #fff;
+    .headerTop{
+        width: 1226px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;        
+        div{           
+            line-height: 100px;       
+            h1{               
+                height: 100px;
+                a{
+                    display: inline-block;
+                    height: 100px;
+                    width: 190px;                    
+                    background: url(../img/index_img/logo.png) no-repeat 0px center;
+                    span{
+                        display: none;
+                    }
+                }                
+            }            
+        }               
+    }
+}
+main{
+    background: rgb(249, 233, 203);   
+    .mian-body{
+        width: 1226px;
+        margin: 0 auto;       
+        display: flex;
+        justify-content: space-between;
+        >div{
+            width: 820px;
+            height: 585px;           
+        }
+        .login{
+            width: 380px;
+            height: 524px;
+            background: #fff;
+            margin-top: 30px;
+            padding: 0px 30px 20px 30px;
+            box-sizing: border-box;
+            ul{
+                height: 84px;
+                display: flex;
+                align-items: center;
+                li{
+                    height: 24px;
+                    font-size: 18px;
+                    color: #333;
+                    padding-left: 48px;
+                    padding-right: 44px;
+                    line-height: 24px; 
+                    cursor: pointer;                  
+                }
+                li:first-of-type{
+                    border-right: 1px solid #e0e0e0;
+                    padding-left: 38px;
+                }
+            }
+             #duanxin{
+                 display: none;
+                 margin-bottom: 75px;
+             }
+             #zhanghao{
+                 margin-bottom: 120px;
+             }
+            #zhanghao>div,#duanxin>div{
+                input{
+                    height: 44px;
+                    width: 317px;
+                    margin-bottom: 15px;
+                    border: 1px solid #dddddd;
+                    line-height: 44px;
+                    padding-left: 15px;
+                    box-sizing: border-box;
+                }
+                input[type="button"]{
+                    margin: 10px 0px 25px 0px;
+                    background: #ddd;
+                    border: none;
+                    text-align: center;
+                    color: #fff;
+                    border: none;                    
+                }
+                #loginBtn{
+                    cursor: pointer;
+                }
+            }
+            #duanxin>div:nth-of-type(2),#duanxin>div:nth-of-type(3){
+                  input{
+                      width: 196px;
+                  }
+                  span{
+                      display: inline-block;
+                      height: 44px;
+                      background: #ddd;
+                      line-height: 44px;
+                      font-size: 14px;
+                      width: 108px;
+                      margin-left: 10px;
+                      text-align: center;
+                      color: #fff;
+                  }
+             }
+            #regTiShi{
+                display: none;
+                font-size: 12px;               
+            }
+            .forget{
+                text-align: center;
+                a{
+                    color: #999999;
+                    font-size: 12px;
+                }
+            }
+            fieldset{
+                border: none;
+                border-top:1px solid #e0e0e0;
+                height: 68px;                
+                text-align: center;                
+                padding: 15px 0px;
+                box-sizing: border-box;
+                legend{
+                    color: #bbbbbb;
+                    font-size: 12px;                    
+                }
+                #qqLoginBtn{
+                 margin-left: 48px;
+                 margin-right: 48px;
+                 display: inline-block;
+                 height: 30px;
+                 width: 30px;                 
+                }
+            }
+        }
+    }
+}

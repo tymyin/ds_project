@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<!--<link rel="shortcut icon" href="https://www.zuipin.cn/web/images/zuipin.ico" type="image/x-icon"/>-->
+	<link rel="stylesheet" href="https://www.zuipin.cn/web/fonts/iconfont.css?v=218">
+	<link rel="stylesheet" href="/css/base.css" />
+	<link rel="stylesheet" href="../css/register.css" />
+	<title>注册</title>
+</head>
+<body>
+	<header>
+		<div class="headerTop">
+			<div><h1><a href="../index.html"><span>醉品商城</span></a></h1><span>欢迎注册</span></div>
+			<div>已有账号？<a href="login.html">请登录</a></div>
+		</div>		
+	</header>
+	<main>
+		<div class="regMainBody">
+			<div class="regForm">
+				<div class="regTitle">注册即送<span>350元</span>新人礼</div>
+				<form method="post" action="#" onsubmit="return false;">					
+					<div><input type="text" placeholder="手机号码" id="userPhone"/>
+						<p id="errPhone" class=""><i class="iconfont"></i><em></em></p>						
+					</div>
+					<div><input type="password" placeholder="6-16位密码" id="userPass" />
+						<p id="errPass" class=""><i class="iconfont"></i><em></em></p>	
+					</div>
+					<div><input type="password" placeholder="再次输入密码" id="confirm" />
+						<p id="confirmPass" class=""><i class="iconfont"></i><em></em></p>
+					</div>
+					<div><input type="text" placeholder="验证码"  class="yanzhengma" id="yanzhengma"/><span id="yan"></span>
+						<p id="erryan" class=""><i class="iconfont"></i><em></em></p>
+					</div>
+					<div><input type="text" placeholder="短信验证码"  class="yanzhengma" /><span>获取验证码</span></div>
+					<div><input type="submit" value="立即注册" id="btn"/></div>
+					<div>点击“立即注册”，即表示您同意并愿意遵守醉品 <a href="#"> 用户协议</a> 和 <a href="#"> 隐私政策</a></div>
+				</form>				
+			</div>
+		</div>
+	</main>
+	<footer>Copyright 2010 - 2018 醉品商城 厦门醉品春秋网络科技有限公司</footer>		
+	<script src="../lib/requirejs/require.js" type="text/javascript" charset="utf-8" data-main="/js/register"></script>	
+</body>
+</html>
