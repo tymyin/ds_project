@@ -55,7 +55,36 @@
 		</div>
 		<div class="logoBottom">
 			<ul>
-				<li>全部商品分类</li>
+				<li style="position: relative;" id="showdiv">全部商品分类
+					<div style="padding-top: 30px;">
+						<div id="hmenu_list" class="menu-list">
+						</div>
+					</div>
+					
+						<script id="hmenu_data" type="text/html">
+							{{each list menus}}
+								<dl>
+									<dt><a href="#">{{menus.title}}</a></dt>
+									<dd>
+										<a href="#">{{menus.mintitlea}}</a>
+										<a href="#">{{menus.mintitleb}}</a>
+										<a href="#">{{menus.mintitlec}}</a>
+										<a href="#">{{menus.mintitled}}</a>
+									</dd>
+									 <div class="minmenu">
+					                	<ul>
+					                		<li><a href="#"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
+					                		<li><a href="#"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
+					                		<li><a href="#"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
+					                		<li><a href="#"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
+					                		<li><a href="#"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
+					                	</ul>
+					                </div>
+								</dl>
+							{{/each}}
+						</script>
+					
+				</li>
 				<li><a href="#">品牌集成馆</a></li>
 				<li><a href="#">大师名匠馆</a></li>
 				<li><a href="#">线下OMO体验店</a></li>
@@ -63,4 +92,5 @@
 			</ul>
 		</div>
 	</div>
+	
 </header>

@@ -1,5 +1,5 @@
 require(["config"],function(){
-	require(["jquery","load"],function($){
+	require(["jquery","template","load"],function($,template){
 		//页面加载完成后执行
 		$(document).ready(function(e){
 			//滚动鼠标后显示浮动的头部
@@ -34,7 +34,11 @@ require(["config"],function(){
 			$("#pingluntitle").click(function(){
 				$("#candicine").hide();
 				$("#pinglun").show();	
-			})
+			});
+			
+			
+			
+						
 		});
 	})
 })

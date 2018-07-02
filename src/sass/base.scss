@@ -203,8 +203,8 @@ table {border-collapse: collapse;border-spacing: 0}
             .logoBottom{
                 padding-top: 30px;
                 padding-bottom: 20px;
-                ul{
-                    li{
+                >ul{
+                    >li{
                         margin-right: 50px;
                         float: left;
                         font-size: 12px;
@@ -212,12 +212,102 @@ table {border-collapse: collapse;border-spacing: 0}
                             color: #333333;
                         }
                     }
-                    li:nth-of-type(1){
-                        margin-right: 123px;
+                    >li:nth-of-type(1){
+                        margin-right:123px;
                         font-size: 16px;
-                        background: url(/img/index_img/icon-list.png)no-repeat 0px center;
+                        background: url(/img/index_img/icon-list.png)no-repeat 0px -5px;
                         padding-left: 28px;
+                        .menu-list{
+                            background: #fff;
+                               border: 2px solid red;
+//                             padding-top: 22px;
+                               width: 234px; 
+                               position: absolute;
+                               top: 30px;
+                               left: 0px; 
+                               display: none;  
+                               z-index: 99;           
+                               dl{
+                                   padding: 15px 32px 0px 20px;
+                                   height: 52px;
+                                   dt{
+                                       float: left;
+                                       font-size: 16px;
+                                       padding-right: 14px;
+                                       a{
+                                           color: #333;
+                                       }                   
+                                   }
+                                   dd{
+                                       font-size: 12px;
+                                       float: right;
+                                       display: flex;
+                                       justify-content: space-between;
+                                       flex-wrap: wrap;
+                                       width: 118px;
+                                       line-height: 16px;
+                                       a{
+                                          color: #b0b0b0; 
+                                       }
+                                   }
+                                   //鼠标滑过显示侧边栏
+                                   .minmenu{
+                                       background: #fff;
+                                       height: 472px;
+                                       width: 320px;
+                                       position: absolute;
+                                       top: 0px;
+                                       left: 236px;
+                                       display: none;
+                                       z-index: 100;
+                                       ul{
+                                           li{
+                                               font-size: 12px;
+                                               height: 77px;
+                                               width: 160px;
+                                               padding-left: 28px;
+                                               line-height: 77px;
+                                               float: left;
+                                               box-sizing: border-box;
+                                               background:none;
+                                               padding-left: 0;
+                                               margin-right: 0px;
+                                               a{
+                                                   color: #444444;
+                                                   img{
+                                                       width: 34px;
+                                                       height: 34px;
+                                                   }
+                                               }
+                                           }
+                                           li:hover{
+                                               a{
+                                                   color: #FF3600;
+                                                   
+                                               }
+                                           }
+                                       }
+                                   }
+                               }
+                               dl:hover{
+                                   background: red;
+                                   dt a,dd a{
+                                       color: #fff;
+                                   }
+                                   .minmenu{
+                                       display: block;
+                                       z-index: 9999;
+                                   }
+                               }
+                               
+                           }
+                       
                     }
+                    #showdiv:hover{                        
+                        #hmenu_list{                           
+                            display: block;                            
+                        }
+                    }  
                     li a:hover{
                         color: #ff3600;
                     }
