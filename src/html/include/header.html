@@ -1,3 +1,4 @@
+
 <header>
 	<!--导航-->
 	<nav>
@@ -61,29 +62,28 @@
 						</div>
 					</div>
 					
-						<script id="hmenu_data" type="text/html">
-							{{each list menus}}
-								<dl>
-									<dt><a href="#">{{menus.title}}</a></dt>
-									<dd>
-										<a href="#">{{menus.mintitlea}}</a>
-										<a href="#">{{menus.mintitleb}}</a>
-										<a href="#">{{menus.mintitlec}}</a>
-										<a href="#">{{menus.mintitled}}</a>
-									</dd>
-									 <div class="minmenu">
-					                	<ul>
-					                		<li><a href="#"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
-					                		<li><a href="#"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
-					                		<li><a href="#"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
-					                		<li><a href="#"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
-					                		<li><a href="#"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
-					                	</ul>
-					                </div>
-								</dl>
-							{{/each}}
-						</script>
-					
+					<script id="hmenu_data" type="text/html">
+						{{each list menus}}
+							<dl>
+								<dt><a href="html/list.html">{{menus.title}}</a></dt>
+								<dd>
+									<a href="html/list.html">{{menus.mintitlea}}</a>
+									<a href="html/list.html">{{menus.mintitleb}}</a>
+									<a href="html/list.html">{{menus.mintitlec}}</a>
+									<a href="html/list.html">{{menus.mintitled}}</a>
+								</dd>
+								 <div class="minmenu">
+				                	<ul>
+				                		<li><a href="html/list.html"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
+				                		<li><a href="html/list.html"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
+				                		<li><a href="html/list.html"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
+				                		<li><a href="html/list.html"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
+				                		<li><a href="html/list.html"><img src="../img/index_img/longjing.jpg" />安溪铁观音</a></li>
+				                	</ul>
+				                </div>
+							</dl>
+						{{/each}}
+					</script>					
 				</li>
 				<li><a href="#">品牌集成馆</a></li>
 				<li><a href="#">大师名匠馆</a></li>
@@ -92,5 +92,38 @@
 			</ul>
 		</div>
 	</div>
-	
+	<!--侧边栏悬浮-->
+	<div class="rightfloat">
+		<div class="consultion-text">
+			<i class="iconfont"></i>
+			<p>客服</p>
+			<div class="consultion-content phone-content">
+	            <img src="../../img/index_img/qqkefu.png" style="margin-bottom: 0;width: 159px; height: 105px;margin-top:14px">
+	        </div>
+		</div>
+		<div class="consultion-text">
+			<i class="iconfont"></i>
+			<p>热线</p>
+			<div class="consultion-content phone-content">
+	            <p class="zpphone"><i class="iconfont" style="top: 2px;"></i>醉品热线</p>
+	            <p class="phone">4006-066-068</p>
+	            <p class="serverTime"><i class="iconfont"></i>服务时间</p>
+	            <p class="time">08:40 - 22:30</p>
+	            <p class="week">(周一至周日)</p>
+	        </div>
+		</div>
+		<div class="consultion-text">
+			<i class="iconfont"></i>
+			<p>服务号</p>
+			<div class="consultion-content" style="height: 180px;background: #fff;">
+	            <!-- <p>关注微信 乐享好礼</p> -->
+	            <img src="../../img/index_img/phone_qr.jpg" style="margin-bottom: 0;width: 130px; height: 130px;margin-top:14px;">
+	            <p style="font-size: 14px; color: #666; margin-top: 6px;">首次关注送<b style="color: #ff3600">500</b>积分</p>
+	        </div>
+		</div>
+		<a href="#" class="consultion-top" id="backtop">
+			<i class="iconfont"></i>
+			<p>顶部</p>
+		</a>
+	</div>
 </header>

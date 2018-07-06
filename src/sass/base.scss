@@ -316,6 +316,175 @@ table {border-collapse: collapse;border-spacing: 0}
         }
 
     }
+    .rightfloat{
+        position: fixed;
+        top: 27%;
+        right: 0;
+        z-index: 100;
+        .consultion-text{
+            width: 50px;
+            height: 58px;
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            position: relative;
+            margin-bottom: 1px;
+            cursor: pointer;
+            padding-top: 8px;
+            box-sizing: border-box;
+            i{
+                width: 20px;
+                height: 22px;
+                display: block;
+                margin-left: 15px;
+                margin-bottom: 5px;
+            }
+        }
+        .consultion-text:nth-of-type(1){
+            i{
+                background: url(../img/index_img/register.png);
+                background-repeat: no-repeat;
+                background-position: center -195px;
+            }
+        }
+        .consultion-text:nth-of-type(2){
+            i{
+                background: url(../img/index_img/register.png);
+                background-repeat: no-repeat;
+//              background-size: 20px 22px;
+                background-position: 0px -220px;
+                
+            }
+        }
+        .consultion-text:nth-of-type(3){
+            i{
+                background: url(../img/index_img/site_bar.png);
+                background-repeat: no-repeat;
+                background-position: -8px -149px;
+            }
+        }
+        .consultion-text:nth-child(2) .consultion-content {
+            display: none;
+            width: 158px;
+            height: 159px;
+            background-color: #fff;
+            color: #333;
+            font-size: 12px;
+            position: absolute;
+            left: -158px;
+            top: -48px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1);
+            p:nth-child(1) {
+                font-size: 12px;
+                color: #333;
+                margin: 20px 0 7px 15px;
+                line-height: 12px;
+                text-align: left;
+                position: relative;
+                padding-left: 25px;
+                i{
+                    display: inline-block;
+                    background: url(../img/index_img/register.png);
+                    background-repeat: no-repeat;
+    //              background-size: 20px 22px;
+                    background-position: 0px -220px;
+                    margin: 0px;
+                    position: absolute;
+                    top: 10px;
+                    left: 0px;
+                }
+            }
+            p:nth-child(2) {
+                font-size: 16px;
+                font-weight: bold;
+                color: #333;
+                margin: 0 0 20px 36px;
+                line-height: 18px;
+                text-align: left;
+            }
+            p:nth-child(3) {
+                font-size: 12px;
+                color: #333;
+                margin: 0 0 7px 16px;
+                line-height: 12px;
+                text-align: left;
+                 position: relative;
+                padding-left: 25px;
+                i{
+                    display: inline-block;
+                    background: url(../img/index_img/register.png);
+                    background-repeat: no-repeat;
+    //              background-size: 20px 22px;
+                    background-position: 0px -220px;
+                    margin: 0px;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+            p:nth-child(4) {
+                font-size: 16px;
+                font-weight: bold;
+                color: #333;
+                margin: 0 0 5px 36px;
+                line-height: 18px;
+                text-align: left;
+            }
+            p:nth-child(5) {
+                font-size: 12px;
+                color: #333;
+                margin: 0 0 0 36px;
+                line-height: 12px;
+                text-align: left;
+            }
+        }
+        .consultion-text:nth-of-type(3) .consultion-content{
+            display: none;
+            position: absolute;
+            left: -130px;
+            top: -15px;
+        }
+        .consultion-text:nth-of-type(1) .consultion-content{
+            display: none;
+            position: absolute;
+            left: -159px;
+            top: -15px;
+        }
+        .consultion-text:nth-child(1):hover,.consultion-text:nth-child(2):hover,.consultion-text:nth-child(3):hover{
+           .consultion-content{
+               display: block;
+           }
+        }
+        .consultion-text:hover,.consultion-top:hover{
+            background: red;
+        }
+        .consultion-top{
+            display: block;
+            margin-top: 19px;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, .6);
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            cursor: pointer;
+             padding-top: 8px;
+            display: none;
+            i{
+                font-size: 20px;
+                line-height: 36px;
+                width: 20px;
+                height: 22px;
+                background: url(../img/index_img/site_bar.png);
+                background-repeat: no-repeat;
+                background-position: -8px -185px;
+                display: block;
+                margin-left: 15px;
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
 
 //底部

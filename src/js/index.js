@@ -1,7 +1,7 @@
 require(["config"],function(){
 	require(["jquery","template","load"],function($,template){	
 		//页面加载完成后执行
-		$(document).ready(function(e){
+		$(document).ready(function(){
 			//滚动鼠标后显示浮动的头部
 			$(window).scroll(function(){
 				var scroll=document.documentElement.scrollTop;
